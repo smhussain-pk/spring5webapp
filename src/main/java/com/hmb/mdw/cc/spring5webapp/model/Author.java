@@ -5,6 +5,7 @@
  */
 package com.hmb.mdw.cc.spring5webapp.model;
 
+import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -17,7 +18,7 @@ import java.util.*;
  * @author syed.hussain
  */
 @Entity
-public class Author {
+public class Author implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
